@@ -17,6 +17,7 @@
       }
       .App {
         text-align: center;
+        user-select: none;
       }
       .App-header {
         background-color: #293241;
@@ -36,18 +37,16 @@
         height: 60vmin;
         pointer-events: none;
         position: relative;
-        user-select: none;
         top: 0;
-        left: center;
+        left: 6vmin;
       }
       .p404 {
         color: #ee6c4d;
         font-family: "Courier New", Courier, monospace;
         font-size: 6.5vmin;
         position: relative;
-        user-select: none;
         top: -20vmin;
-        left: -25.65vmin;
+        left: -19.75vmin;
       }
       .Par1 {
         color: #98c1d9;
@@ -93,11 +92,11 @@
     <div class="App">
       <header class="App-header">
         <div class="parent">
-          <div>
+          <div style="user-select: none">
             <img src="/404.svg" alt="logo" class="logo404" />
-            <!-- <b class="p404">404</b> -->
+            <b class="p404">404</b>
           </div>
-          <p class="Par1">I couldn't find the page you're looking for.</p>
+          <h2 class="Par1">I couldn't find the page you're looking for.</h2>
         </div>
       </header>
     </div>
