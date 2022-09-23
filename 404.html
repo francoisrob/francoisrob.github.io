@@ -2,16 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Francoisrob</title>
-    <meta
-      name="description"
-      content="Lightweight solution for deploying single page apps with GitHub Pages."
-    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="My personal portfolio :)" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
 
+    <title>Francoisrob</title>
     <style>
-      html {
-        background-color: rgb(0, 120, 0);
+      body {
+        background-color: #293241;
+        /* color: white; */
+      }
+      .App {
+        text-align: center;
+      }
+      .App-header {
+        background-color: #293241;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+      }
+      .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .logo404 {
+        height: 60vmin;
+        pointer-events: none;
+        position: relative;
+        user-select: none;
+        top: 0;
+        left: center;
+      }
+      .p404 {
+        color: #ee6c4d;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 6.5vmin;
+        position: relative;
+        user-select: none;
+        top: -20vmin;
+        left: -25.65vmin;
+      }
+      .Par1 {
+        color: #98c1d9;
+        font-family: Arial, Helvetica, sans-serif;
       }
     </style>
 
@@ -50,7 +90,16 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script src="/build/bundle.js"></script>
+    <div class="App">
+      <header class="App-header">
+        <div class="parent">
+          <div>
+            <img src="/404.svg" alt="logo" class="logo404" />
+            <b class="p404">404</b>
+          </div>
+          <p class="Par1">I couldn't find the page you're looking for.</p>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
